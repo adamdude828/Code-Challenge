@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Node;
+use App\Observables\NodeWatcher;
 use Laravel\Lumen\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider
