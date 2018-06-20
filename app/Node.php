@@ -57,9 +57,8 @@ class Node extends Model
     }
 
     public static function insertNewIntoTree($data) {
-        $node = self::create([
-            'name'=>$data['name']
-        ]);
+	$node = new self();
+        $node->name = $data['name'];
         self::insertIntoTree($node, $data['supervisor_id']);
     }
 
